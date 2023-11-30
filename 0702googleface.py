@@ -1,11 +1,11 @@
-# "api_key": "AIzaSyDBPgM37K91oiF9XhF423ipRWAT8hQeP5g"
+# "api_key": "####"
 import numpy as np
 from google.cloud import vision
 import cv2
 
 def detect_face(face_file, max_results = 10):
     client = vision.ImageAnnotatorClient(
-        client_options={"api_key": "AIzaSyDBPgM37K91oiF9XhF423ipRWAT8hQeP5g"}
+        client_options={"api_key": "#####"}
     )
     content = face_file.read()
     image = vision.Image(content=content)
